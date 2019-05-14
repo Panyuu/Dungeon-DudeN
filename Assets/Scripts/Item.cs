@@ -2,15 +2,20 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Item
+public class Item : MonoBehaviour
 {
-    public readonly string item_name;
+    public int ID;
+    public string item_name;
+    public string description;
+    public bool combinable;
+    public Sprite icon;
+    public bool pickedUp;
 
-    public Item(string item_name)
+    /*public Item(string item_name)
     {
         this.item_name = item_name;
     }
-
+    */
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Debug.Log("item collided");

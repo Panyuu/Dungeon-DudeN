@@ -57,7 +57,7 @@ public class Movement : MonoBehaviour
         //controller.Move(xOffset * Time.fixedDeltaTime, yOffset * Time.fixedDeltaTime, false, false);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    /*private void OnCollisionEnter2D(Collision2D collision)
     {
         Debug.Log("N collided!");
         if (collision.gameObject.name == "Item")
@@ -65,5 +65,5 @@ public class Movement : MonoBehaviour
             items.Add(new Item(collision.gameObject.name));
             Destroy(collision.gameObject);
         }
-    }
+    }*/
 }
